@@ -345,7 +345,7 @@ dt:hover{
   height: 300px;
   transform: rotate(360deg);
 } */
-.button{
+/* .button{
   background-color: aqua;
   border: none;
   border-radius: 100px;
@@ -365,4 +365,18 @@ dt:hover{
 h1{
   text-align: center;
   display: fixed;
+} */
+#Calculator{
+  width: 200px;
+  margin:50px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+#display{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 18px;
 }
