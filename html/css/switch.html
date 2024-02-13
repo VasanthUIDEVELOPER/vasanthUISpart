@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH EXAMPLE</title>
+    <link rel="stylesheet" href="./switch.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2> SWITCH EXAMPLE</h2>
+        <div class="inputdiv">
+            <input type="text" id="value1" placeholder="Enter the Value 1">
+        </div>
+        <div id="operator" for="operator"> Select operator</div>
+        <select id="operator1">
+            <option value="+">Addition</option>
+            <option value="-">Subtraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Division</option>
+        </select>
+        <div class="inputdiv">
+            <input type="text" id="value2" placeholder="Enter the Value 2">
+        </div>
+        <div>
+            <button type="submit" onclick="operation()">C</button>
+        </div>
+        <div>
+            <p id="result"> Result:</p>
+        </div>
+    </div>
+    <script src="./switch.js"></script>
+    
+</body>
+</html>

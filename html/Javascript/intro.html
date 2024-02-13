@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./intro.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Conversion</h2>
+        <div class="inputdiv">
+          <input type="text" id="input" placeholder="Length in CM">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">Inches</button>
+        </div>
+        <div>
+            <button type="submit" onclick="cmtomm()" id="cmtomm">MM</button>
+        </div>
+        <div>
+            <button type="submit" onclick="cmtom()" id="cmtom">Metre</button>
+        </div>
+        <div>
+            <button type="submit" onclick="cmtokm()" id="cmtom">KM</button>
+        </div>        
+        <!-- <div type="enter" id="enter" onclick="convert()"></div> -->
+        <div>
+            <input type="text" id="resultbox" placeholder="Converted Values">
+        </div>
+    </div>
+    <script src="./intro.js"></script>
+    
+</body>
+</html>

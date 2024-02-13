@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+    <div>
+            <p class="signup"> <b>Sign Up Form</b></p>
+    <form class="formclass">
+        <label for="fname"> <b>First Name:</b></label>
+        <input type="text"><br><br>
+        <label for="lname"><b>Last Name:</b> </label>
+        <input type="text"><br><br>
+        <label for="mailid"><b>Mail Id:</b> </label>
+        <input type="email"><br><br>
+        <label for="alternate"><b>Alternate Mail Id:</b> </label>
+        <input type="email"><br><br>
+        <label for="mobile"><b>Mobile No:</b> </label>
+        <input type="text" id="mobno" name="mobile" maxlength="10"><br><br>
+        <input type="radio">
+        <label for="html"><b>UG</b></label>
+        <input type="radio">
+        <label for="html"><b>PG</b></label>
+        <input type="radio">
+        <label for="html"><b>Doctorate</b></label><br><br>
+        <input type="range">
+        <label for="range"><b>Percentage</b>
+            <datalist id="tickmarks">
+                <option value="0"></option>
+                <option value="25"></option>
+                <option value="50"></option>
+                <option value="75"></option>
+                <option value="100"></option>
+            </datalist></label><br><br>
+        <label for="Country"><b>Country</b></label>
+        <select id="Country" name="Country">
+            <option value="India"> India</option>
+            <option value="India"> Sri Lanka</option>
+            <option value="India"> USA</option>
+            <option value="India"> UK</option>
+        </select><br><br>
+        <label for="Birthday"><b>Birthday:</b></label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="file" class="login" id="pdffile" accept="pdf/*"><br><br>
+        <input type="submit" class="login" value="submit"><br><br>
+    </form>
+    </div>
+
+</body>
+
+</html>

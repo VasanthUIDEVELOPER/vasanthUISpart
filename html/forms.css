@@ -1,0 +1,84 @@
+
+.login:hover{ 
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  html{
+    margin:0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    font-family: 'poppins',sans-serif;
+    background: linear-gradient(115deg,#56d8e4 10%,#9f01ea 90%);
+  }
+  .formclass{
+    padding: 10%;
+    text-align: left (10,10,10);
+    background-color: #fff;
+  }
+  .signup {
+    max-width: 400px;
+background: #fff;
+width: 800px;
+padding: 25px 40px 10px 40px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.signup{
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    background: -webkit-linear-gradient(right,#56d8e4,#9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  .fname {
+    position: relative;
+  }
+  @keyframes fname{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+  }
+  .login {
+    bottom: -100%;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: fname 1s linear infinite;
+    animation-delay: .75s;
+  }
+  input[type="text" i] {
+    position: absolute;
+    margin-left: 20%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  input[type="email" i] {
+    position: absolute;
+    margin-left: 20%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.formclass:focus{
+    text-underline-position: above;
+    transform: scale(1);
+}
+
