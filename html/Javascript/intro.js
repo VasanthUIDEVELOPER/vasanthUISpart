@@ -70,4 +70,14 @@ document.getElementById("resultbox").value=(inchval.toFixed(2)+"km");        eve
         document.getElementById("result").click();
     }
 })
+// const button = document.getElementsByClassName(".btn")
 
+// button.addEventListener("click",buttonClick())
+
+// function buttonClick(e) {
+//   console.log(e.target); // <button class="btn">Click me</button>
+//   console.log(e.target.className); // btn
+//   console.log(e.type); // click
+//   console.log(e.offsetY); // 16
+//   console.log(e.ctrlKey);
+// }
