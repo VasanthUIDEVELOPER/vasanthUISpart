@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+
+<form id="myForm">
+    <div>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    </div>
+    <div>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+    </div>
+    <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+    <label for="experience">Experience:</label>
+    <textarea id="experience" name="experience"></textarea>
+    </div>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+    function submitForm() {
+        // Get form values
+        var fullname = document.getElementById('fullname').value;
+        var lastname = document.getElementById('lastname').value;
+        var email = document.getElementById('email').value;
+        var experience = document.getElementById('experience').value;
+
+        // Construct the mailto link
+        var subject = encodeURIComponent('Form Submission');
+        var body = encodeURIComponent(
+            'Full Name: ' + fullname + '\n' +
+            'Last Name: ' + lastname + '\n' +
+            'Email: ' + email + '\n' +
+            'Experience: ' + experience
+        );
+
+        var mailtoLink = 'mailto:vasanth.m@willwaretech.com' +
+            '?subject=' + subject +
+            '&body=' + body;
+
+        // Open the default email client with the filled data
+        window.location.href = mailtoLink;
+    }
+</script>
+
+</body>
+</html>
